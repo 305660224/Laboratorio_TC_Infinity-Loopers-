@@ -10,13 +10,20 @@ package Persons;
  */
 public abstract class Person {
 private String Name;
+private String Id;
 
     public String getName() {
         return Name;
     }
 
-    public Person(String Name) {
+    public String getId() {
+        return Id;
+    }
+    
+    public Person(String Name, String Id) {
         this.Name = Name;
+        this.Id = Id;
+        
     }
 
     @Override
