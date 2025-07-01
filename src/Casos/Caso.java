@@ -16,6 +16,7 @@ public class Caso {
     private String Descripcion;
     private String Tipo;
     private LocalDate FechaRegistro;
+
     private EnumPrioridadd Prioridad;
     
     public String getId() {

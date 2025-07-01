@@ -46,7 +46,7 @@ public class Social_Worker extends Person {
         if (!Phone.matches("^[245678]\\d{1}-\\d{2}-\\d{2}-\\d{2}$") || !Id.matches("^[1-7]-?\\d{4}-?\\d{4}")) {
             throw new IllegalArgumentException("Datos ingresados inválidos."); //Detiene el constructor si es invalido el Id, o Phone
         }
-        super(Name);
+        super(Name, Id);
         this.Id = Id;
         this.Email = Email;
         this.Phone = Phone;
