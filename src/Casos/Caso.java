@@ -16,7 +16,7 @@ public class Caso {
     private String Descripcion;
     private String Tipo;
     private LocalDate FechaRegistro;
-    private String Prioridad;
+    private EnumPrioridadd Prioridad;
     
     public String getId() {
         return Id;
@@ -38,15 +38,15 @@ public class Caso {
         return FechaRegistro;
     }
 
-    public String getPrioridad() {
+    public EnumPrioridadd getPrioridad() {
         return Prioridad;
     }
 
-    public void setPrioridad(String Prioridad) {
+    public void setPrioridad(EnumPrioridadd Prioridad) {
         this.Prioridad = Prioridad;
     }
     
-    public Caso(String Id, String Victima, String Descripcion, String Tipo, LocalDate FechaRegistro, String Prioridad) {
+    public Caso(String Id, String Victima, String Descripcion, String Tipo, LocalDate FechaRegistro, EnumPrioridadd Prioridad) {
         this.Id = Id;
         this.Victima = Victima;
         this.Descripcion = Descripcion;
@@ -57,6 +57,6 @@ public class Caso {
      
      @Override
     public String toString() {
-        return "Caso{" +"id='" + Id + '\'' +", victima='" + Victima + '\'' +", descripcion='" + Descripcion + '\'' + ", tipo='" + Tipo + '\'' + ", fechaRegistro=" + FechaRegistro +", prioridad='" + Prioridad + '\'' +'}';
+        return "Caso{" +"id='" + Id + '\'' +", victima='" + Victima + '\'' +", descripcion='" + Descripcion + '\'' +", tipo='" + Tipo + '\'' +", fechaRegistro=" + FechaRegistro +", prioridad=" + Prioridad +'}';
     }
 }
